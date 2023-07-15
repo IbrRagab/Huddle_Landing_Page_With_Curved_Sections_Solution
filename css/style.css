@@ -1,0 +1,453 @@
+:root {
+	--Pink-color: hsl(322, 100%, 66%);
+	--Light-Pink: hsl(321, 100%, 78%);
+	--Light-Red: hsl(0, 100%, 63%);
+	--Very-Dark-Cyan: hsl(192, 100%, 9%);
+	--Very-Pale-Blue: hsl(207, 100%, 98%);
+	--heading-font: 'Poppins', sans-serif;
+	--body-font: 'Open Sans', sans-serif;
+}
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: var(--body-font);
+}
+
+h1,
+h2,
+h3 {
+	font-family: var(--heading-font);
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+	.container {
+		width: 750px;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.container {
+		width: 1250px;
+	}
+}
+
+header nav {
+	padding: 60px 0;
+}
+
+header nav .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header nav img {
+	max-width: 50%;
+}
+
+header nav a {
+	padding: 8px 20px;
+	color: var(--Pink-color);
+	border: 1px solid var(--Pink-color);
+	box-shadow: 1px 4px 10px var(--Very-Pale-Blue);
+	border-radius: 50px;
+	transition: 0.3s;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+header nav a:hover {
+	color: var(--Light-Pink);
+	border-color: var(--Light-Pink);
+	box-shadow: 1px 1px 8px var(--Light-Pink);
+}
+
+.one {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.one .container {
+	text-align: center;
+}
+
+.one .container h1 {
+	font-size: 35px;
+	margin-bottom: 20px;
+}
+
+.one .container p {
+	margin: 30px 0;
+	line-height: 1.7;
+}
+
+@media (min-width: 992px) {
+	.one .container p {
+		padding: 0 300px;
+	}
+}
+
+.one .container a {
+	display: block;
+	margin: auto;
+	padding: 15px 50px;
+	width: fit-content;
+	background-color: var(--Pink-color);
+	color: white;
+	box-shadow: 2px 4px 10px #ddd;
+	border-radius: 50px;
+	transition: 0.3s;
+}
+
+.one .container a:hover {
+	background-color: var(--Light-Pink);
+	box-shadow: 4px 8px 10px #ccc;
+}
+
+.two {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.two .mockup {
+	text-align: center;
+}
+
+.two .mockup img {
+	max-width: 70%;
+}
+
+.two .boxes {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 80px;
+}
+
+@media (max-width: 767px) {
+	.two .boxes {
+		flex-direction: column;
+		gap: 60px;
+	}
+}
+
+.two .boxes .box svg path {
+	fill: var(--Pink-color);
+}
+
+.two .boxes .box>div {
+	margin-top: 10px;
+}
+
+.two .boxes .box>div span {
+	display: block;
+}
+
+.two .boxes .box>div span:first-of-type {
+	font-size: 55px;
+	font-weight: bold;
+}
+
+.two .boxes .box>div span:last-of-type {
+	font-size: 14px;
+	color: #ccc;
+	text-align: center;
+}
+
+.curve img {
+	width: 100%;
+}
+
+.curve .desktop {
+	display: block;
+}
+
+.curve .mobile {
+	display: none;
+}
+
+.curve.top {
+	margin-top: 60px;
+	margin-bottom: -10px;
+}
+
+.curve.bottom {
+	margin-top: -10px;
+	margin-bottom: 60px;
+}
+
+@media (max-width: 767px) {
+	.curve .desktop {
+		display: none;
+	}
+
+	.curve .mobile {
+		display: block;
+	}
+}
+
+.three,
+.five {
+	padding: 50px 0;
+	background-color: var(--Very-Pale-Blue);
+}
+
+.container.flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 145px;
+}
+
+.info h2 {
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+
+.info p {
+	margin-top: 20px;
+	line-height: 1.7;
+}
+
+
+.image img {
+	max-width: 100%;
+}
+
+.four {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.four .container {
+	flex-direction: row-reverse;
+}
+
+
+@media (max-width: 767px) {
+	.container.flex {
+		flex-direction: column-reverse;
+		gap: 60px;
+	}
+
+	.info {
+		text-align: center;
+	}
+}
+
+.six {
+	margin-top: 60px;
+	margin-bottom: 60px;
+	padding: 50px 0;
+	text-align: center;
+}
+
+.six h3 {
+	font-size: 26px;
+	margin-bottom: 20px;
+}
+
+.six .container a {
+	display: block;
+	margin: auto;
+	padding: 15px 50px;
+	width: fit-content;
+	background-color: var(--Pink-color);
+	color: white;
+	box-shadow: 2px 4px 10px #ddd;
+	border-radius: 50px;
+	transition: 0.3s;
+}
+
+.six .container a:hover {
+	background-color: var(--Light-Pink);
+	box-shadow: 4px 8px 10px #ccc;
+}
+
+.seven {
+	padding: 50px 0;
+	background-color: var(--Very-Dark-Cyan);
+	color: white;
+}
+
+.seven .container:first-of-type {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 200px;
+	margin-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+	.seven .container:first-of-type {
+		flex-direction: column-reverse;
+		gap: 50px;
+	}
+}
+
+.seven svg {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.seven svg path {
+	fill: white !important;
+}
+
+.seven p {
+	margin: 20px 0;
+	font-size: 14px;
+	line-height: 1.7;
+}
+
+.seven .contact .row {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 10px;
+}
+
+.seven .contact .row:first-of-type {
+	margin-bottom: 10px;
+}
+
+.seven .box h3 {
+	font-size: 28px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.seven form {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 30px;
+}
+
+@media (max-width: 767px) {
+	.seven form {
+		flex-direction: column;
+		align-items: flex-end;
+	}
+}
+
+.seven form div {
+	position: relative;
+	width: 100%;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+.seven form:focus-within div::before {
+	content: 'Check your email please';
+	position: absolute;
+	left: 0;
+	bottom: -25px;
+	font-size: 12px;
+	color: var(--Light-Red);
+}
+
+.seven form input {
+	display: block;
+	width: 100%;
+	padding: 15px;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	transition: 0.3s;
+}
+
+.seven form:focus-within input {
+	border: 2px solid var(--Light-Red);
+}
+
+.seven form button {
+	padding: 15px 45px;
+	font-size: 16px;
+	background-color: var(--Pink-color);
+	color: white;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	border-radius: 3px;
+	transition: 0.3s;
+}
+
+.seven form button:hover {
+	background-color: var(--Light-Pink);
+}
+
+.seven .container.icon {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 5px;
+	margin-bottom: 0;
+}
+
+.seven .icon i {
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.seven .icon i:hover {
+	color: #00c7fa;
+}
+
+.attribution {
+	padding: 10px;
+	font-size: 11px;
+	text-align: center;
+	background-color: var(--Very-Dark-Cyan);
+	color: white;
+	border-top: 1px solid var(--Light-Pink);
+}
+
+.attribution a {
+	font-weight: bold;
+	color: var(--Light-Pink);
+}
