@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution]()
-- Live Site URL: [live site]()
+- Solution URL: [Solution](https://github.com/IbrRagab/Huddle_Landing_Page_With_Curved_Sections_Solution)
+- Live Site URL: [live site](https://ibrragab.github.io/Huddle_Landing_Page_With_Curved_Sections_Solution)
 
 ### Built with
 
